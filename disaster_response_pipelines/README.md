@@ -1,4 +1,4 @@
-# Disaster Response PipeLine
+# Disaster Response Pipeline Project
 
 ## Introduction
 
@@ -26,12 +26,18 @@ There are three components in this project.
 
    To allow easy interactions withe the model, a flask web app was implemented. which allows user to input a new message and get classification result back via web interface. The web App will also provide visualization to the underlying data
 
-### Running the code
+### Instructions:
+1. Run the following commands in the project's root directory to set up your database and model.
 
-- to populate sql lite db, python process_data.py messages.csv categories.csv InsertDatabaseName.db
-- to build classifer, python train_classifier.py ../data/InsertDatabaseName.db classifier.pkl
-- to run the web app, python run.py
-- open browser using url https://SPACEID-3001:SPACEDOMAIN, where SPACEID and SPACEDOMAIN is given by the command env | grep WORK on linux terminal.
+    - To run ETL pipeline that cleans data and stores in database
+        `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
+    - To run ML pipeline that trains classifier and saves
+        `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
+
+2. Run the following command in the app's directory to run your web app.
+    `python run.py`
+
+3. Go to http://0.0.0.0:3001/
 
 ## Project File Structure
 
