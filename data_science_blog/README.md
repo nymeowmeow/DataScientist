@@ -26,3 +26,4 @@ the blog that describe the finding can be found
 3. as expected, the more experience the developer has, the longer they will stay with their current employer
 
 [blog url] (https://medium.com/@pookc/does-software-developer-in-us-get-rewarded-for-working-longer-hours-867059e8a592)
+image is taken from Pixabay
